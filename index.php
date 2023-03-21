@@ -156,24 +156,43 @@
 
 // Assignment
 // Write a validation logic for a simple voting system.
-$voterAge = "18";
-$voterPVC = "has PVC";
-$voterWard = "020";
-    if ($voterAge <= "18") {
-        echo "Voter eligible to vote: Voter's age is above 18years. <br>"; 
-    } else{
-        echo "Voter isn't eligible to vote: Voter's age is below 18years. <br>";
-    }
-    if ($voterPVC == "has PVC") {
-        echo "Voter eligible to vote: Voter has PVC. <br>"; 
-    } else{
-        echo "Voter isnt eligible to vote: Voter has no PVC. <br>";
-    }
-    if ($voterWard == "020") {
-        echo "Voter eligible to vote: Voter's ward is 020. <br>"; 
-    } else{
-        echo "Voter isnt eligible to vote : Voter's ward isn't 020. <br>";
-    }
+// $voterAge = "18";
+// $voterPVC = "has PVC";
+// $voterWard = "020";
+//     if ($voterAge < "18") {
+//         echo "Voter eligible to vote: Voter's age is above 18years. <br>"; 
+//     } else{
+//         echo "Voter isn't eligible to vote: Voter's age is below 18years. <br>";
+//     }
+//     if ($voterPVC == "has PVC") {
+//         echo "Voter eligible to vote: Voter has PVC. <br>"; 
+//     } else{
+//         echo "Voter isnt eligible to vote: Voter has no PVC. <br>";
+//     }
+//     if ($voterWard == "020") {
+//         echo "Voter eligible to vote: Voter's ward is 020. <br>"; 
+//     } else{
+//         echo "Voter isnt eligible to vote : Voter's ward isn't 020. <br>";
+//     }
 
+// Assignment retaken
+// Write a validation logic for a simple voting system. Validations to check includes:
+//  Check if voter is above 18 years Check if voter has PVC Check if voter’s ward is 020
+//  If all checks out, echo “Voter eligible to vote”. If any fails, echo why it failed.
+
+// assume the following variables are already defined:
+// $age (voter's age)
+// $hasPVC (whether voter has PVC or not)
+// $ward (voter's ward)
+
+if ($age < 18) {
+    echo "Sorry, you must be 18 years or older to vote.";
+} elseif (!$hasPVC) {
+    echo "Sorry, you must have a valid PVC to vote.";
+} elseif ($ward != '020') {
+    echo "Sorry, you can only vote if you are registered in ward 020.";
+} else {
+    echo "You are eligible to vote!";
+}
 
 ?>
