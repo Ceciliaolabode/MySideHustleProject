@@ -185,14 +185,85 @@
 // $hasPVC (whether voter has PVC or not)
 // $ward (voter's ward)
 
-if ($age < 18) {
-    echo "Sorry, you must be 18 years or older to vote.";
-} elseif (!$hasPVC) {
-    echo "Sorry, you must have a valid PVC to vote.";
-} elseif ($ward != '020') {
-    echo "Sorry, you can only vote if you are registered in ward 020.";
-} else {
-    echo "You are eligible to vote!";
+// if ($age < 18) {
+//     echo "Sorry, you must be 18 years or older to vote.";
+// } elseif (!$hasPVC) {
+//     echo "Sorry, you must have a valid PVC to vote.";
+// } elseif ($ward != '020') {
+//     echo "Sorry, you can only vote if you are registered in ward 020.";
+// } else {
+//     echo "You are eligible to vote!";
+// }
+
+// WEEK 3
+// Include and Require Statements. And Functions in PHP. 
+?>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+         include 'header.php';
+        // require 'header.php'; // gives the same result.
+    ?>
+    <p>Welcome!</p>
+
+    <?php
+        //  function sayHello() {
+        //         echo "Hello";//write your statements inside the curly braces.
+        //  }
+
+        //  sayHello(); // a function only works when you call it.
+        
+        //  function multiply($num, $num2){ // $num is a parameter
+        //         $answer = $num * $num2;
+        //         echo $answer;
+        //  }
+
+        //  multiply(3,4); // 3 is an argument
+
+        // //Default Argument
+        //  function multiply($num, $num2 = 2){ 
+        //         $answer = $num * $num2;
+        //         echo $answer;
+        //  }
+
+        //  multiply(3); 
+        // // Return Statement
+        //   function multiply($num, $num2){ 
+        //         $answer = $num * $num2;
+        //         return $answer;
+        //  }
+
+        //  echo multiply(9,4); 
+
+        // $connect = mysqli_connect('localhost', 'root', '', 'php_class');
+        // if (  $db_connect) {
+        //     echo "Connected";
+        // } else {
+        //     echo "Not connected";
+        // }
+
+        // to insert data into mysqli from php
+        // $insert_data = mysqli_query($db_connect, "INSERT INTO students( name, age, gender)VALUES( 'Yetty', '25', 'F')");
+        // if ($insert_data) {
+        //     echo "Data saved successfully";
+        // }
+    ?>
+</body>
+</html> -->
+
+<?php
+function multiplythreenos ($num1, $num2, $num3=5) {
+    $result = $num1, $num2, $num3;
+    return $result;    
 }
+ include 'header.php';
 
 ?>
